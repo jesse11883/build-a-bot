@@ -1,5 +1,7 @@
 #bot-name {
   color: brown;
   background: blue;
-  
+  justify-content: center
+  flex-end 
+    space-around
 }

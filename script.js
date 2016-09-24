@@ -1,4 +1,39 @@
-var gameInput = $("#bot-input");
+<html>
+  <head>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+
+
+
+
+    <style>
+    #bot-name {
+  color: red;
+}
+  </style>
+
+
+
+
+
+    </head>
+    <body>
+    <div id="bot-name">
+      Bot Name Here
+        </div>
+        <div id="bot-input-container">        
+          <input id="bot-input" type="text"/>      
+            </div>
+            <div>
+            <div id="bot-output"> 
+
+              </div>      
+              </div>
+
+              <img id="robot-pic" src="http://img5.imgtn.bdimg.com/it/u=3409396837,1556064680&fm=21&gp=0.jpg">    
+
+                <script>
+                var gameInput = $("#bot-input");
 var gameOutput  = $("#bot-output");
 gameInput.keydown(function(keydownEvent) {  
   // the key code for enter is 13
@@ -8,9 +43,37 @@ gameInput.keydown(function(keydownEvent) {
   }  
 })
 
-function parseText(text) {    
-    if (text === "hello") {
-      gameOutput.html("YAY!");
-    }
+
+
+
+function parseText(text) {            
+  if (text === "hello") {
+    gameOutput.html("Hi there!");
+  } else if (text === "name?") {
+    gameOutput.html("All powerful David Bot")
+  } else if (text === "robot come out") {
+
+  }
 }
+
+
+
+
+</script>
+
+
+
+
+
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+
 
